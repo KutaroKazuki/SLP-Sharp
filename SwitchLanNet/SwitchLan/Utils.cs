@@ -10,7 +10,7 @@ namespace SwitchLanNet
     internal static class Utils
     {
         public static string AddressToString(IPEndPoint addr)
-            => $"{addr.Address.ToString()}:{addr.Port}";
+            => $"{addr.Address.ToString()}:{addr.Port}/info";
 
         public static Dictionary<T, CacheItem> ClearCacheItem<T>(Dictionary<T, CacheItem> map)
         {

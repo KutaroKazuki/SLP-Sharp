@@ -65,7 +65,7 @@ namespace SwitchLanNet
 
         public static IWebHostBuilder CreateWebHostBuilder(IPAddress ip, int port, string[] args) =>
             WebHost.CreateDefaultBuilder(args)
-            .UseUrls($"http://{ip.ToString()}:{port}")
+            .UseUrls($"http://{ip.ToString()}:{port}/info")
                 .UseStartup<Startup>();
     }
 }
